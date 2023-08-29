@@ -9,7 +9,33 @@
     }
 }
 
+.l-main{
+    padding-bottom: 140px;
 
+}
+.about-text{
+    font-size: 16px;
+}
+.about-text.ul{
+    display: flex;
+    justify-content: center;
+}
+.about-ul{
+    max-width: 600px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: initial;
+}
+
+.about-li{
+    word-wrap: break-word;
+    width: 100%;
+    transform: translateX(10px);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 15px 0;
+}
 :root {
     --mb-1: 0.5rem;
     --mb-2: 1rem;
@@ -128,6 +154,9 @@ img {
 .certification-wrap{
     display: flex;
     justify-content: center;
+}
+.certifications-text{
+    font-size: 17px;
 }
 .certification-wrap img {
     width: 90%;
@@ -340,6 +369,16 @@ section.about {
 .education-name{
     font-size: 20px;
 }
+.school-wrap{
+    display: flex;
+    justify-content: center;
+    transform: translateX(-16px);
+}
+.school-image{
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 4px;
+}
 .education-platform {
     font-size: 16px;
 }
@@ -492,7 +531,6 @@ img.man-icons {
     margin-bottom: 0;
 }
 #projects {
-    padding-bottom: 20vh;
     display: flex;
     justify-content: center;
 }
@@ -527,9 +565,7 @@ img.man-icons {
 .project-container p {
     margin: auto 1rem 1rem;
 }
-#education{
-    padding-bottom: 140px;
-}
+
 .project-title {
     margin-bottom: var(--mb-2);
     padding-top: var(--mb-2);
