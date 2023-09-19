@@ -21,7 +21,7 @@
     justify-content: center;
 }
 .about-ul{
-    max-width: 600px;
+    max-width: 650px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@
     transform: translateX(10px);
     font-weight: 600;
     font-size: 14px;
+    text-align: left;
     margin: 15px 0;
 }
 :root {
@@ -313,12 +314,47 @@ img {
 }
 
 
+.job-title-span{
+    text-align: left; 
+    font-size: 20px; 
+    display: block; 
+    font-weight: 600;
+    width: 100%;
+}
+.job-desc-span{
+    font-size: 17px;
+}
+.span-desc{
+    font-weight: normal;
+    font-size: 16px;
+}
+.job-title{
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    background: white;
+}
+.desc{
+    margin: 0;
+}
 section.about {
     padding: 10vh 15px 10vh 15px;
 }
 
 .about-container {
     text-align: center;
+    position: relative
+}
+
+.vert-line{
+    position: absolute;
+    z-index: 2;
+    left: 2px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: lightgrey;
 }
 
 .about-subtitle {
@@ -364,6 +400,21 @@ section.about {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.description-date{
+    padding-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 2px;
+    margin-top: 23px;
+    background: white;
+    position: relative;
+    z-index: 3;
+}
+.description-date-span{
+    text-align: left;
+    display: block;
 }
 
 .education-name{
