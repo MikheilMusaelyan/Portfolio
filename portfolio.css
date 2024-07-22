@@ -344,7 +344,11 @@ section.about {
 
 .about-container {
     text-align: center;
-    position: relative
+    position: relative;
+    margin-bottom: 40px;
+}
+.about-container:last-of-type{
+    margin-bottom: 0;
 }
 
 .vert-line{
@@ -426,8 +430,10 @@ section.about {
     transform: translateX(-16px);
 }
 .school-image{
+    min-width: 32px;
     max-width: 32px;
     max-height: 32px;
+    border-radius: 3px;
     margin-right: 4px;
 }
 .education-platform {
@@ -496,6 +502,9 @@ section.about {
     width: 2.7rem;
     transform: translateX(-6px);
 }
+#flutter{
+    width: 1.6rem;
+}
 #html{
     width: 3.4rem;
     margin-right: 0;
@@ -509,6 +518,13 @@ section.about {
 }
 #jquery{
     width: 2.5rem;
+}
+#netcore{
+    width: 2.1rem;
+}
+#csharp{
+    width: 2.5rem;
+    margin-left: -4px;
 }
 
 img.man-icons {
@@ -609,10 +625,6 @@ img.man-icons {
     margin-bottom: 0.5rem;
 }
 
-.project-img img:hover {
-    transform: scale(1.1);
-}
-
 .project-container p {
     margin: auto 1rem 1rem;
 }
@@ -686,7 +698,47 @@ img.man-icons {
     margin: 0 var(--mb-2);
 }
 
+
+/* images */
+.appstoreimage-frame{
+    perspective: 100px;
+}
+.appstoreimage-container{
+    padding: 10px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #dff1fb;
+}
+
+.appstoreimage{
+    border-radius: 7px;
+    max-height: 350px;
+    box-shadow: 0 2px 4px rgb(236, 236, 236);
+}
+#appstore1{
+    transform: 
+    rotate3d(.5,1,0,5deg) 
+    rotate(-1deg) 
+    translate(-10px)
+    translateZ(0);
+}
+#appstore2{
+    max-height: 320px !important;
+}
+#appstore3{
+    transform: 
+    rotate3d(.5,-1,0,5deg) 
+    rotate(1deg) 
+    translate(10px)
+    translateZ(0);
+}
+
 @media screen and (min-width: 768px) {
+    .projects-wrap {
+        align-items: flex-start;
+    }
+
     body {
         margin: 0;
     }
@@ -755,7 +807,7 @@ img.man-icons {
 
     .about-container {
         align-items: center;
-        margin: auto;
+        margin: auto auto 40px auto;
         width: 50%;
         transition: 0.5s;
     }
